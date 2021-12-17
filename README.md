@@ -11,9 +11,9 @@ TODO: add GitLab equivalent
   TODO: write up WGC specifics
 
 # Demo applications
-- podinfo
-- podinfo-deploy (repo with deployment artifacts only)
-- sock-shop (Kustomize deployment
+- [podinfo](https://github.com/stefanprodan/podinfo/)
+- [podinfo-deploy](https://github.com/wego-example/podinfo-deploy) (repo with deployment artifacts only)
+- [sock-shop](https://github.com/microservices-demo/microservices-demo) (Kustomize deployment
 - sock-shop (Helm chart deployment)
 
 # Application deployments by cluster
