@@ -3,6 +3,3 @@ kind: Kustomization
 metadata:
   name: podinfo
   namespace: wego-system
-resources:
-- ../../../apps/podinfo
-- ../../../apps/podinfo
