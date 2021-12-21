@@ -3,13 +3,13 @@ apiVersion: wego.weave.works/v1alpha1
 kind: Application
 metadata:
   labels:
-    wego.weave.works/app-identifier: wego-d2f06e03641df59ff2162395d0756967
+    wego.weave.works/app-identifier: wego-e9e1b2ed695155c01d2a3fa26bdd824b
   name: podinfo
   namespace: wego-system
 spec:
   branch: main
   config_url: ssh://git@github.com/sympatheticmoose/weave-gitops-multicluster-demo.git
   deployment_type: kustomize
-  path: ./
+  path: /
   source_type: git
   url: ssh://git@github.com/sympatheticmoose/podinfo-deploy.git
