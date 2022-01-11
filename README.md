@@ -32,4 +32,8 @@ TODO: add GitLab equivalent
 - **podinfo**: `gitops add app --url https://github.com/stefanprodan/podinfo/ --path ./kustomize --config-repo <your-config-repo>`
 - **sock**-**shop** (Kustomize): `gitops add app --url git@github.com:microservices-demo/microservices-demo.git --path ./deploy/kubernetes/manifests --config-repo <your-config-repo>`
 - **sock**-**shop** (Helm): first create namespace - `kubectl create ns sock-shop` then `gitops add app --url ssh://git@github.com/microservices-demo/microservices-demo.git --path ./deploy/kubernetes/helm-chart --app-config-url <config-repo> --deployment-type helm --helm-release-target-namespace sock-shop
-Adding application
+Adding application`
+
+
+# Notes
+- running multiple clusters on laptop is a bit resource hungry. Can stop/restart (kind at least) by doing `docker ps -a` to find the appropriate containers and then `docker start|stop`.
