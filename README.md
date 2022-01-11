@@ -3,7 +3,7 @@ Example showing 4 local k8s clusters and a variety of deployments managed with W
 TODO: add GitLab equivalent
 
 # Kubernetes clusters
-- [Kind](https://kind.sigs.k8s.io/)
+- [Kind](https://kind.sigs.k8s.io/) - 2 versions running v1.23.1 and v1.22.4 (`kind create cluster --name <name> --image kindest/node:<tag>`)
 - [Minikube](https://minikube.sigs.k8s.io/)
 - [k3d](https://k3d.io/)
 - [OpenShift](https://console.redhat.com/openshift/create/local) (CodeReady Containers)
@@ -15,12 +15,14 @@ TODO: add GitLab equivalent
 - [podinfo-deploy](https://github.com/wego-example/podinfo-deploy) (repo with deployment artifacts only)
 - [sock-shop](https://github.com/microservices-demo/microservices-demo) (Kustomize deployment
 - sock-shop (Helm chart deployment)
+- [NGINX ingress](https://kubernetes.github.io/ingress-nginx) (Helm chart)
 
 # Application deployments by cluster
-- Kind: podinfo, Sock-Shop (Helm)
-- Minikube: podinfo-deploy, Sock-Shop (kustomize)
-- k3d: podinfo-deploy
-- OpenShift: podinfo-deploy, Sock-Shop (Helm)
+- Kind 1.23.1: podinfo-deploy (kustomize)
+- Kind 1.22.4: podinfo-deploy (kustomize), NGINX ingress (helm)
+- Minikube: podinfo (kustomize), Sock-Shop (helm)
+- k3d: podinfo-deploy (kustomize)
+- OpenShift: podinfo, Sock-Shop (kustomize)
 
 # Try for yourself
 1. Fork this repo
