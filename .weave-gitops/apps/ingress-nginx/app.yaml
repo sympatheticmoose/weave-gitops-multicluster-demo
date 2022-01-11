@@ -1,0 +1,16 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-d8c70a3669490867c4bc0e17d833d544
+  name: ingress-nginx
+  namespace: wego-system
+spec:
+  branch: main
+  config_url: ssh://git@github.com/sympatheticmoose/weave-gitops-multicluster-demo.git
+  deployment_type: helm
+  helm_target_namespace: ingress-system
+  path: ingress-nginx
+  source_type: helm
+  url: https://kubernetes.github.io/ingress-nginx
