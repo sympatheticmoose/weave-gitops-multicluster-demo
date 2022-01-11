@@ -25,7 +25,7 @@ TODO: add GitLab equivalent
 - OpenShift: podinfo, Sock-Shop (kustomize)
 
 # Try for yourself
-1. Fork this repo
+1. Fork this repo (LPT: store the location of this repo with `export CONFIG_REPO='https://github.com/<username>/weave-gitops-multicluster-demo` for easier CLI actions)
 2. Install [Weave GitOps Core](https://github.com/weaveworks/weave-gitops)
 3. Run `gitops install --config-repo <path-to-your-fork-of-this-repo>`. If your cluster name matches the default for any of the above, the appropriate apps will be installed, if not - a new cluster entry will appear and you can run any of the following to add an application, note this shows a few different ways of adding an app including https/ssh url format:
 - **podinfo-deploy**: `gitops add app --url https://github.com/wego-example/podinfo-deploy --config-repo <your-config-repo>`
