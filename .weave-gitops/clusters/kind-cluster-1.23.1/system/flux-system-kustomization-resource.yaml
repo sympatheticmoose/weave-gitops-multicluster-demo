@@ -1,0 +1,14 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: kind-cluster-1.23.1-system
+  namespace: wego-system
+spec:
+  interval: 1m0s
+  path: ./.weave-gitops/clusters/kind-cluster-1.23.1/system
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: wego-github-weave-gitops-multicluster-demo
+
