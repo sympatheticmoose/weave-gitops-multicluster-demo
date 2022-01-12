@@ -13,16 +13,14 @@ TODO: add GitLab equivalent
 # Demo applications
 - [podinfo](https://github.com/stefanprodan/podinfo/)
 - [podinfo-deploy](https://github.com/wego-example/podinfo-deploy) (same app, repo has deployment artifacts only)
-- [sock-shop](https://github.com/microservices-demo/microservices-demo) (Kustomize deployment)
-- sock-shop (Helm chart deployment)
 - [Loki](https://github.com/grafana/) (Helm chart)
 
 # Application deployments by cluster
 - Kind 1.23.1: podinfo-deploy (kustomize)
-- Kind 1.22.4: podinfo-deploy (kustomize), NGINX ingress (helm)
-- Minikube: podinfo (kustomize), Sock-Shop (helm)
+- Kind 1.22.4: podinfo-deploy (kustomize), Loki (helm)
+- Minikube: podinfo (kustomize), Loki (helm)
 - k3d: podinfo-deploy (kustomize)
-- OpenShift: podinfo, Sock-Shop (kustomize)
+- OpenShift: podinfo (kustomize)
 
 # Try for yourself
 1. Fork this repo (LPT: store the location of this repo with `export CONFIG_REPO='--config-repo=https://github.com/<username>/weave-gitops-multicluster-demo` for easier CLI actions)
