@@ -1,0 +1,15 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-bd9b8496cd7400280e87b9dada857cf2
+  name: loki-stack
+  namespace: wego-system
+spec:
+  branch: main
+  config_url: ssh://git@github.com/sympatheticmoose/weave-gitops-multicluster-demo.git
+  deployment_type: helm
+  path: loki-stack
+  source_type: helm
+  url: https://grafana.github.io/helm-charts
