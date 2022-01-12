@@ -4,4 +4,4 @@ metadata:
   name: podinfo
   namespace: wego-system
 resources:
-- ../../../apps/podinfo-deploy
+- ../../../apps/podinfo
