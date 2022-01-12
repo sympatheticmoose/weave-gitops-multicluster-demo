@@ -12,10 +12,10 @@ TODO: add GitLab equivalent
 
 # Demo applications
 - [podinfo](https://github.com/stefanprodan/podinfo/)
-- [podinfo-deploy](https://github.com/wego-example/podinfo-deploy) (repo with deployment artifacts only)
-- [sock-shop](https://github.com/microservices-demo/microservices-demo) (Kustomize deployment
+- [podinfo-deploy](https://github.com/wego-example/podinfo-deploy) (same app, repo has deployment artifacts only)
+- [sock-shop](https://github.com/microservices-demo/microservices-demo) (Kustomize deployment)
 - sock-shop (Helm chart deployment)
-- [NGINX ingress](https://kubernetes.github.io/ingress-nginx) (Helm chart)
+- [Loki](https://github.com/grafana/) (Helm chart)
 
 # Application deployments by cluster
 - Kind 1.23.1: podinfo-deploy (kustomize)
