@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: wego-github-weave-gitops-multicluster-demo
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: wego-github-weave-gitops-multicluster-demo
+  url: ssh://git@github.com/sympatheticmoose/weave-gitops-multicluster-demo.git
+
